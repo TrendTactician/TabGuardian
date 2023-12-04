@@ -1,7 +1,7 @@
 <h1 align="center">TabGuardian Chrome Extension</h1>
 <!--- TabGuardian Logo --->
 
-```TabGuardian is a Chrome extension that helps you maintain a clutter-free browsing experience by automatically closing tabs opened by websites. Say goodbye to unwanted pop-ups and tabs spawned by links—you're in control of your browser.```
+<h3 align="center">TabGuardian is a Chrome extension that helps you maintain a clutter-free browsing experience by automatically closing tabs opened by websites. Say goodbye to unwanted pop-ups and tabs spawned by links you're in control of your browser.</h3>
 
 ## Features
 - ```Automatic Tab Closure:``` Tabs opened by websites are swiftly closed to maintain a tidy browsing environment.
