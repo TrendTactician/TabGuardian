@@ -1,22 +1,82 @@
-<!-- options.html -->
+<!-- Add this link in the head of your popup.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+
+<!-- Add this style tag in the head of your popup.html -->
+<style>
+  body {
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+</style>
+
+
+<!-- popup.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>TabGuardian Options</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabGuardian</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    .section {
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .checkbox label {
+      font-size: 14px;
+    }
+
+    .input,
+    .button {
+      font-size: 14px;
+    }
+
+    #saveBtn {
+      margin-top: 5px;
+      width: 100%; /* Force button to take full width */
+    }
+  </style>
 </head>
 <body>
-  <h1>TabGuardian Options</h1>
+  <div class="section">
+    <h3 class="title">Operation Mode</h3>
+    <label class="checkbox">
+      <input type="checkbox" id="enableNormal"> Normal Web Browser
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="enableIncognito"> Incognito Mode
+    </label>
+  </div>
 
-  <label>
-    <input type="checkbox" id="enableNormal" checked>
-    Enable in Normal Mode
-  </label>
-  <br>
-  <label>
-    <input type="checkbox" id="enableIncognito" checked>
-    Enable in Incognito Mode
-  </label>
+  <div class="section">
+    <h3 class="title">Block Site</h3>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <input class="input" type="text" id="domainInput" placeholder="Enter domain">
+      </div>
+      <div class="control">
+        <button class="button is-primary" id="blockSiteBtn">Block Site</button>
+      </div>
+    </div>
+  </div>
 
-  <script src="options.js"></script>
+  <div class="section">
+    <button class="button is-success" id="saveBtn">Save</button>
+  </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
