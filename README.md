@@ -9,11 +9,37 @@
 - ```Minimalist Design:``` A lightweight solution that ensures simplicity and ease of use.
 
 ## Installation
-You can install TabGuardian from the Chrome Web Store.
 
-1. Visit the TabGuardian page on the Chrome Web Store.
-2. Click on the "Add to Chrome" button.
-3. Confirm the installation when prompted.
+**1. Download the Extension Files:**
+- Go to the GitHub repository where the extension is hosted.
+- Look for a ```Code``` button (usually green) and click on it.
+- Choose the ```Download ZIP``` option.
+- Extract the ZIP file to a location on your computer.
+
+**2. Load the Extension in Chrome:**
+- Open Google Chrome.
+- Type ```chrome://extensions/``` in the address bar and press Enter.
+- Enable ```Developer mode``` in the top right corner of the extensions page.
+
+**3. Load the Unpacked Extension:**
+- Click on the ```Load unpacked``` button that appears after enabling Developer mode.
+- Select the folder where you extracted the extension files and click ```Select Folder```.
+
+**4. Enable the Extension:**
+- The extension should now appear in the list of installed extensions on the ```chrome://extensions/``` page.
+- Make sure the toggle switch next to your extension is turned on.
+
+**5. Configure Options:**
+
+
+```Please Note at the moment when extension is enabled you won't be able to use more then one Tab in chrome, as its the extensions functionality we are currently working on fix.```
+- The extension has options, you will able to configure them by clicking on icon.
+- You can select which mode you want to operate the extension in either or both ```Incognito & Normal Mode```
+  (Please Note at the moment when extension is enabled you won't be able to use more then one Tab in chrome, as its the extensions functionality).
+- You can also block websites manually which opens Tabs constatly
+
+**6. Test the Extension:**
+- Open a new tab or navigate to a website to test if the extension is working as intended.
 
 
 ## Usage
