@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Popup Blocker Extension</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 300px;
+    }
+    input[type="text"] {
+      width: 180px;
+      margin-right: 5px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .bubble {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 50%;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Popup Blocker</h2>
+  <div class="section">
+    <label for="toggle">Enable:</label>
+    <input type="checkbox" id="toggle">
+    <div id="count"></div>
+  </div>
+  <div class="section">
+    <h3>Block Popup Tabs</h3>
+    <input type="text" id="popupSite" placeholder="Enter site">
+    <button id="addPopupBtn">Add</button>
+    <div id="popupMsg"></div>
+    <ul id="popupList"></ul>
+  </div>
+  <div class="section">
+    <h3>Block Downloads</h3>
+    <input type="text" id="downloadSite" placeholder="Enter site">
+    <button id="addDownloadBtn">Add</button>
+    <div id="downloadMsg"></div>
+    <ul id="downloadList"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
